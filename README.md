@@ -16,7 +16,7 @@ This project aims to develop and design a secure, transparent, and scalable onli
 A web-based voting system will be developed for election management, voter authentication, data integrity assurance, and real-time result calculation.
 
 ## Technology Stack
-- **Backend:** Python, Node.js
+- **Backend:** Python(Django)
 - **Frontend:** HTML, CSS, JavaScript
 - **Database:** MySQL
 - **Security Protocols:** End-to-end encryption, OTP-based authentication, Face recognition
@@ -47,7 +47,7 @@ A web-based voting system will be developed for election management, voter authe
 ### System Architecture
 1. **Frontend (JavaScript)**
    - User interface for registration, voting, and result viewing.
-2. **Backend (Python, Node.js)**
+2. **Backend (Django)**
    - Handles authentication, vote processing, and data encryption.
 3. **Database (MySQL)**
    - Stores voter information, votes, and audit logs.
@@ -64,38 +64,3 @@ A web-based voting system will be developed for election management, voter authe
 - **Development Tools:** VS Code, Postman (API Testing), GitHub
 - **Cloud Services:** AWS or DigitalOcean for hosting
 - **Database Management:** MySQL for database design
-
-## Installation & Setup
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/smart-voting-system.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd smart-voting-system
-   ```
-3. Install dependencies:
-   ```sh
-   npm install   # For frontend dependencies
-   pip install -r requirements.txt   # For backend dependencies
-   ```
-4. Setup environment variables and database configurations.
-5. Run the application:
-   ```sh
-   npm start  # Start the frontend
-   python backend.py  # Start the backend
-   ```
-
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create a new branch (`feature-branch`).
-3. Commit your changes.
-4. Push to your forked repo.
-5. Submit a pull request.
-
-## License
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
-## Contact
-For inquiries or collaboration, contact us at [your-email@example.com].
