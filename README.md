@@ -1,9 +1,9 @@
 # Smart Online Voting & Election Management System
 # Team Asleep
- Meherun Nesa Ritu (223014089)
- Amena Akter (223014065)
- Tasphia Islam (223014186)
- Mahbuba Akter Chowdhury (223014083)
+ Meherun Nesa Ritu (223014089)   
+ Amena Akter (223014065)  
+ Tasphia Islam (223014186)  
+ Mahbuba Akter Chowdhury (223014083)  
 
 ## Problem Statement
 A country faces huge challenges in conducting fair and efficient elections. Traditional voting systems like EVM face corruption such as voter fraud, fake votes, vote-buying, booth capturing, and low voter participation due to political pressure in rural regions. Additionally, millions of citizens living abroad or in different cities are unable to participate in elections due to the lack of an efficient online voting system.
