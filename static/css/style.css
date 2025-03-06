@@ -2,7 +2,7 @@
 .sign-in-page {
     margin: 0;
     padding: 0;
-    background-color: rgb(32, 32, 3);
+    background-color: rgb(219, 219, 208);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ input::-webkit-outer-spin-button,
 
 button{
     padding: 10px 40px ;
-    background-color: rgb(56, 191, 196);
+    background-color: rgb(2, 29, 7);
     color: rgb(167, 149, 17);
     border-radius: 5px;
     border: none;
