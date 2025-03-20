@@ -4,16 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    
-    <title>Welcome</title>
-    
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="{% static 'css/dash.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ 
 </head>
-<body class="sign-in-page">
-    <div class="container">
-        <h3>Welcome!</h3>
-    </div>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#help">Help</a></li>
+            <li><a href="#elections">Elections</a></li>
+            <li><a href="#vote-count">Vote Count</a></li>
+            <li><a href="#candidate">Candidate</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to the Online Voting System</h1>
+        <p>Secure, Transparent, and Efficient Digital Voting</p>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-card" id="about">
+            <i class="fas fa-info-circle"></i>
+            <h2>About</h2>
+            <p>Learn about our secure and transparent voting system.</p>
+        </div>
+        <div class="service-card" id="help">
+            <i class="fas fa-hands-helping"></i>
+            <h2>Help</h2>
+            <p>Need assistance? Find answers to common questions.</p>
+        </div>
+        <div class="service-card" id="elections">
+            <i class="fas fa-poll"></i>
+            <h2>Elections</h2>
+            <p>Stay updated on ongoing and upcoming elections.</p>
+        </div>
+        <div class="service-card" id="vote-count">
+            <i class="fas fa-chart-bar"></i>
+            <h2>Vote Count</h2>
+            <p>View real-time vote counting and results.</p>
+        </div>
+        <div class="service-card" id="candidate">
+            <i class="fas fa-user-tie"></i>
+            <h2>Candidate</h2>
+            <p>Explore candidate profiles and their manifestos.</p>
+        </div>
+        <div class="service-card" id="login">
+            <i class="fas fa-sign-in-alt"></i>
+            <h2>Login</h2>
+            <p>Access your account to cast your vote securely.</p>
+        </div>
+    </section>
 
 </body>
 </html>
