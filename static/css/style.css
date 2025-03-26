@@ -1,62 +1,92 @@
 
+/* Page Background */
 .sign-in-page {
     margin: 0;
     padding: 0;
-    background-color: rgb(39, 12, 61);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
-    background: url("static\image\1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    font-family: "Poppins", Arial, sans-serif;
+    background: url("static/image/1.jpg") no-repeat center center/cover;
 }
 
-form{
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container{
-    margin: 0;
-    padding: 0;
+/* Centering the form */
+form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-   
-    font-family: Arial, sans-serif;
-}
-
-input{
     width: 100%;
-    padding: 10px;
-    font-size: medium;
-    border: 2px solid rgb(194, 181, 65);
-    transition: all 0.3s ease-in-out;
-    margin: 20px;
+    max-width: 400px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);  /* Semi-transparent dark background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
+/* Form container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
-button{
-    padding: 10px 40px ;
-    background-color: rgb(2, 29, 7);
-    color: rgb(167, 149, 17);
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid rgb(194, 181, 65);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9); /* Soft white input background */
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 12px; /* Reduced space */
+}
+
+/* Remove number spinner (for numeric inputs) */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Input Focus Effect */
+input:focus {
+    border-color: rgb(255, 215, 0); /* Gold border */
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(255, 215, 0, 0.6);
+}
+
+/* Submit Button */
+button {
+    padding: 12px 40px;
+    background: linear-gradient(135deg, #2a2a72, #009ffd);
+    color: white;
+    font-size: 16px;
     border-radius: 5px;
     border: none;
-    gap: 10px;
-    margin: 20px;
-    font-size: medium;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 15px;
+}
 
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(135deg, #009ffd, #2a2a72);
+    box-shadow: 0px 4px 10px rgba(0, 159, 253, 0.4);
+}
 
+/* Login Link */
+a {
+   
+    color: #2a2a72;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
 }

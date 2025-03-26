@@ -5,21 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">  <!-- Linking CSS -->
     
-    <title>LogIn</title>
-    
+    <title>NID Verification</title>
 </head>
 <body class="sign-in-page">
-    <div class="container">
-        <form action="NID_verification" method="post">
-        {%csrf_token%}
-            <label for="">NID</label>
-            <input type="text" id="NID_no" name="NID_no" placeholder="Enter NID...">
-        <button type="submit">LogIn</a></button>
-        </form>
-        
-    </div>
+
+    <!-- NID Verification Section -->
+    <section class="nid-verification">
+        <div class="container">
+            <h2>NID Verification</h2>
+            <p>Please enter your National ID number to proceed.</p>
+            <form action="{% url 'NID_verification' %}" method="post">
+                {% csrf_token %}
+                <label for="NID_no">Enter Your NID:</label>
+                <input type="text" id="NID_no" name="NID_no" placeholder="Enter NID..." required>
+                <button type="submit">Verify</button>
+            </form>
+
+            <!-- Show error message if NID verification fails -->
+            {% if error %}
+                <p style="color: red;">{{ error }}</p>
+            {% endif %}
+        </div>
+    </section>
 
 </body>
 </html>
